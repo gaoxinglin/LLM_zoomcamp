@@ -1,0 +1,61 @@
+{
+  "base_url": "http://100.114.202.116:11434/v1",
+  "model": "qwen3.5:4b",
+  "note": "The script uses Ollama native /api/chat with think:false. completion_tokens is Ollama eval_count; visible_output_tokens is a cl100k_base estimate for the returned text.",
+  "results": [
+    {
+      "name": "q2_without_rag",
+      "model": "qwen3.5:4b",
+      "prompt_tokens": 37,
+      "completion_tokens": 536,
+      "total_tokens": 573,
+      "visible_output_tokens": 532,
+      "text": "Kestra version **1.1** marked a significant milestone for the open-source data orchestration platform, focusing on improving developer experience (DX), enhancing security out-of-the-box, and expanding core capabilities like scheduling and monitoring. While specific feature lists can vary slightly based on release notes from different regions or community updates, here are five major features that were highlighted in Kestra 1.1:\n\n### 1. Native Support for Kubernetes Secrets\nOne of the most critical security improvements was the ability to store sensitive data (like API keys and passwords) directly within your pipeline definitions using **Kubernetes Secrets**. This eliminates the need for external secret management tools or hardcoding credentials, ensuring that secrets are encrypted at rest in the cluster and automatically rotated if managed by Kubernetes.\n\n### 2. Enhanced Scheduling with Cron Expressions\nThe platform introduced more robust scheduling capabilities to handle complex workflows better than simple \"run every X minutes\" logic. It now supports **Cron expressions** natively, allowing users to define intricate schedules (e.g., running a job at the start of every hour regardless of minute intervals). This also improved reliability by ensuring tasks are retried correctly if they fail during their scheduled window.\n\n### 3. Advanced Monitoring and Alerting\nKestra 1.1 significantly upgraded its observability features, moving beyond basic logs to provide **real-time dashboards** with customizable metrics. Users can now visualize pipeline performance, track execution history over time, and set up automated alerts for failures or latency spikes directly from the UI without needing external monitoring stacks like Prometheus or Grafana initially configured manually.\n\n### 4. Improved Developer Experience (DX)\nThe team focused heavily on making the platform more intuitive for data engineers. Key DX improvements included:\n*   **Better Error Messages**: Clearer feedback when pipelines fail, indicating exactly which step caused the issue and why.\n*   **Interactive UI Enhancements**: A redesigned interface that allows users to edit pipeline steps directly in the browser without needing a full IDE setup initially.\n\n### 5. Native Support for Python (Pydantic) Integration\nWhile Kestra supports many languages via connectors, version 1.1 strengthened its native support for **Python**, specifically integrating with **Pydantic** models more seamlessly within custom code blocks. This allows developers to define complex data structures and validation rules directly inside their pipeline steps without relying solely on external libraries or JSON schemas, making Python-based transformations safer and easier to maintain.\n\nThese features collectively aimed to make Kestra a production-ready solution for enterprise-grade data orchestration by addressing common pain points in security, scheduling complexity, and operational visibility."
+    },
+    {
+      "name": "q2_with_rag_context",
+      "model": "qwen3.5:4b",
+      "prompt_tokens": 3003,
+      "completion_tokens": 275,
+      "total_tokens": 3278,
+      "visible_output_tokens": 270,
+      "text": "Based on the release notes for **Kestra 1.1**, here are five major new features:\n\n*   **New Filters**: A completely redesigned UI filter system that replaces complex text fields with explicit, user-friendly options. It allows users to reset filters instantly and save frequently used combinations.\n*   **No-Code Dashboard Editor**: An extension of the multi-panel editor for dashboards, enabling users to create visualizations and data sources directly in the UI without writing YAML code.\n*   **Human Task (Enterprise)**: A feature allowing paused workflow executions to be manually approved only by specific users or groups, supporting human-in-the-loop workflows with granular permission controls.\n*   **Multi-Agent AI Systems**: The ability for AI agents to use other specialized AI agents as tools, enabling sophisticated multi-agent orchestration where a primary agent can delegate tasks (e.g., web search) to expert sub-agents.\n*   **Enhanced File Detection Triggers**: Improvements to file watchers (like GCS or S3 triggers) that now react not just to new files (`CREATE`), but also to updated existing files via the `on: UPDATE` property, in addition to triggering on both with `on: CREATE_OR_UPDATE`.\n\nOther notable features include **Custom App Branding** for Enterprise users and improved **Air-Gapped Support**."
+    },
+    {
+      "name": "q3_multilingual_agent_short",
+      "model": "qwen3.5:4b",
+      "prompt_tokens": 294,
+      "completion_tokens": 122,
+      "total_tokens": 416,
+      "visible_output_tokens": 122,
+      "text": "Kestra is an open-source orchestration platform that enables declarative workflow definition via YAML while supporting no-code interfaces for automation across data engineering, ETL pipelines, and business processes. It adheres to a \"start simple\" philosophy by allowing users to scale from basic scheduled tasks to complex environments involving Python scripts, Docker containers, and custom plugins without compromising version control or security.\n\nIn the context of LLM Zoomcamp's bonus module, Kestra is utilized alongside AI Copilot, Retrieval-Augmented Generation (RAG), and autonomous agents to accelerate workflow development for production-ready large language model applications."
+    },
+    {
+      "name": "q4_multilingual_agent_long",
+      "model": "qwen3.5:4b",
+      "prompt_tokens": 294,
+      "completion_tokens": 177,
+      "total_tokens": 471,
+      "visible_output_tokens": 177,
+      "text": "Kestra is an open-source orchestration platform that enables the declarative definition of workflows in YAML while supporting no-code interfaces for users without programming expertise. It prioritizes a \"start simple\" approach by allowing immediate scheduling of basic tasks through its UI, with the flexibility to integrate Python scripts, Docker containers, and complex branching logic as requirements evolve. This architecture supports version control, governance, security, and auditing across diverse use cases such as data engineering, ETL pipelines, and business process automation.\n\nThe platform extends functionality via plugins and custom scripts, making it adaptable for specialized needs without requiring a complete rewrite of existing workflows. In the context of LLM Zoomcamp, Kestra serves as an infrastructure layer to accelerate workflow development by integrating AI Copilot capabilities, Retrieval-Augmented Generation (RAG), vector search mechanisms, autonomous agents, and evaluation frameworks into production-ready applications."
+    },
+    {
+      "name": "q5_english_brevity_long_one_sentence",
+      "model": "qwen3.5:4b",
+      "prompt_tokens": 201,
+      "completion_tokens": 44,
+      "total_tokens": 245,
+      "visible_output_tokens": 44,
+      "text": "Kestra is a flexible open-source orchestration platform that enables declarative YAML workflows with no-code interfaces for immediate task scheduling while supporting advanced features like AI Copilot integration to accelerate development in data engineering and business automation."
+    },
+    {
+      "name": "q5_english_brevity_long_three_sentences",
+      "model": "qwen3.5:4b",
+      "prompt_tokens": 201,
+      "completion_tokens": 103,
+      "total_tokens": 304,
+      "visible_output_tokens": 104,
+      "text": "Kestra is an open-source orchestration platform that allows users to define workflows declaratively in YAML while offering no-code interfaces for immediate task scheduling. It supports a flexible architecture capable of integrating Python scripts, Docker containers, and complex logic across diverse use cases like data engineering and business automation. In the context of LLM Zoomcamp, Kestra acts as an infrastructure layer that accelerates development by embedding AI Copilot capabilities, RAG systems, vector search, autonomous agents, and evaluation frameworks into production-ready applications."
+    }
+  ]
+}
