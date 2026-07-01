@@ -1,0 +1,136 @@
+{
+  "environment": {
+    "ollama_base_url": "http://100.114.202.116:11434",
+    "ollama_model": "qwen3.5:4b"
+  },
+  "counts": {
+    "documents": 72,
+    "chunks": 295,
+    "ground_truth_questions": 360
+  },
+  "q1": {
+    "average_input_tokens": 1386.3333333333333,
+    "calls": [
+      {
+        "filename": "01-agentic-rag/lessons/01-intro.md",
+        "input_tokens": 1044,
+        "output_tokens": 99,
+        "questions": [
+          "What exactly are Large Language Models and how do they work?",
+          "Why is it important for us to build a RAG system from scratch instead of using existing frameworks immediately?",
+          "Can you explain the main limitations that make LLMs unreliable on their own?",
+          "How does Retrieval-Augmented Generation actually solve those specific problems with hallucinations and outdated knowledge?",
+          "What will we be building in this course, specifically regarding the FAQ agent example?"
+        ],
+        "raw_text": "```json\n{\"questions\": [\"What exactly are Large Language Models and how do they work?\", \"Why is it important for us to build a RAG system from scratch instead of using existing frameworks immediately?\", \"Can you explain the main limitations that make LLMs unreliable on their own?\", \"How does Retrieval-Augmented Generation actually solve those specific problems with hallucinations and outdated knowledge?\", \"What will we be building in this course, specifically regarding the FAQ agent example?\"]\n```"
+      },
+      {
+        "filename": "01-agentic-rag/lessons/02-environment.md",
+        "input_tokens": 1322,
+        "output_tokens": 150,
+        "questions": [
+          "I'm setting up my environment and wondering if I really need to install uv or can just use pip for the dependencies?",
+          "How much money do I actually have to deposit into OpenAI before starting this course, is it a lot?",
+          "What's the best way to store my API key so that I don't accidentally commit it to git and leak my account details?",
+          "I'm on Windows trying to install uv but the command looks different from Mac/Linux, can you confirm how to do it there?",
+          "Is dirdotenv a must-have tool for this course or just an optional convenience feature?"
+        ],
+        "raw_text": "```json\n{\n  \"questions\": [\n    \"I'm setting up my environment and wondering if I really need to install uv or can just use pip for the dependencies?\",\n    \"How much money do I actually have to deposit into OpenAI before starting this course, is it a lot?\",\n    \"What's the best way to store my API key so that I don't accidentally commit it to git and leak my account details?\",\n    \"I'm on Windows trying to install uv but the command looks different from Mac/Linux, can you confirm how to do it there?\",\n    \"Is dirdotenv a must-have tool for this course or just an optional convenience feature?\"\n  ]\n}\n```"
+      },
+      {
+        "filename": "01-agentic-rag/lessons/03-rag.md",
+        "input_tokens": 1793,
+        "output_tokens": 110,
+        "questions": [
+          "Why can't I just send a student's question directly to an LLM without any extra steps?",
+          "What exactly is RAG and how does it differ from using the model on its own training data?",
+          "How do I structure my prompt so that the AI uses specific context instead of guessing answers?",
+          "Is there a way for the system to automatically find relevant documents rather than me copying text manually?",
+          "Why is the quality of search results more important than just picking a better LLM model?"
+        ],
+        "raw_text": "```json\n{\"questions\": [\"Why can't I just send a student's question directly to an LLM without any extra steps?\", \"What exactly is RAG and how does it differ from using the model on its own training data?\", \"How do I structure my prompt so that the AI uses specific context instead of guessing answers?\", \"Is there a way for the system to automatically find relevant documents rather than me copying text manually?\", \"Why is the quality of search results more important than just picking a better LLM model?\"]\n```"
+      }
+    ]
+  },
+  "q2": {
+    "question": "What exactly is a retrieval-augmented generation system, and why does it help with answers that the model wouldn't know on its own?",
+    "first_text_result": "01-agentic-rag/lessons/03-rag.md",
+    "top_5": [
+      {
+        "filename": "01-agentic-rag/lessons/03-rag.md",
+        "start": 3000
+      },
+      {
+        "filename": "01-agentic-rag/lessons/13-function-calling.md",
+        "start": 1000
+      },
+      {
+        "filename": "01-agentic-rag/lessons/03-rag.md",
+        "start": 2000
+      },
+      {
+        "filename": "01-agentic-rag/lessons/13-function-calling.md",
+        "start": 2000
+      },
+      {
+        "filename": "01-agentic-rag/lessons/01-intro.md",
+        "start": 0
+      }
+    ]
+  },
+  "q3": {
+    "question": "What exactly is a retrieval-augmented generation system, and why does it help with answers that the model wouldn't know on its own?",
+    "first_vector_result": "01-agentic-rag/lessons/01-intro.md",
+    "top_5": [
+      {
+        "filename": "01-agentic-rag/lessons/01-intro.md",
+        "start": 0
+      },
+      {
+        "filename": "04-evaluation/lessons/11-evaluation-intro.md",
+        "start": 0
+      },
+      {
+        "filename": "04-evaluation/lessons/12-rag-answers.md",
+        "start": 2000
+      },
+      {
+        "filename": "01-agentic-rag/lessons/10-rag-next-steps.md",
+        "start": 0
+      },
+      {
+        "filename": "06-best-practices/lessons/01-intro.md",
+        "start": 0
+      }
+    ]
+  },
+  "q4": {
+    "hit_rate": 0.7583333333333333,
+    "mrr": 0.5942592592592594
+  },
+  "q5": {
+    "hit_rate": 0.725,
+    "mrr": 0.5486111111111112
+  },
+  "q6": {
+    "hybrid_metrics": {
+      "1": {
+        "hit_rate": 0.8388888888888889,
+        "mrr": 0.6481944444444449
+      },
+      "50": {
+        "hit_rate": 0.8361111111111111,
+        "mrr": 0.637916666666667
+      },
+      "100": {
+        "hit_rate": 0.8361111111111111,
+        "mrr": 0.637916666666667
+      },
+      "200": {
+        "hit_rate": 0.8361111111111111,
+        "mrr": 0.637916666666667
+      }
+    },
+    "best_k": 1
+  }
+}
