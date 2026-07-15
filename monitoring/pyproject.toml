@@ -1,0 +1,22 @@
+[project]
+name = "llm-zoomcamp-hw5"
+version = "0.1.0"
+description = "LLM Zoomcamp 2026 module 5 monitoring homework"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "gitsource>=0.0.5",
+    "minsearch>=0.0.7",
+    "openai>=2.0.0",
+    "opentelemetry-api>=1.38.0",
+    "opentelemetry-sdk>=1.38.0",
+    "pandas>=2.2.0",
+    "python-dotenv>=1.0.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
