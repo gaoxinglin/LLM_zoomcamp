@@ -1,0 +1,8 @@
+.env
+.venv/
+.dlt/
+*.duckdb
+*.duckdb.wal
+__pycache__/
+*.py[cod]
+
