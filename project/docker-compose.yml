@@ -1,0 +1,42 @@
+services:
+  api:
+    build: .
+    command: uvicorn nz_open_data_assistant.api:app --host 0.0.0.0 --port 8000
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_PATH: /app/runtime/app.db
+    ports:
+      - "8000:8000"
+    volumes:
+      - app-data:/app/runtime
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  ui:
+    build: .
+    command: streamlit run app/streamlit_app.py --server.address 0.0.0.0 --server.port 8501
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      api:
+        condition: service_healthy
+
+  ingest:
+    build: .
+    command: nz-ingest --database /app/runtime/app.db --max-per-topic 200 --replace
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - app-data:/app/runtime
+    profiles: ["tools"]
+
+volumes:
+  app-data:

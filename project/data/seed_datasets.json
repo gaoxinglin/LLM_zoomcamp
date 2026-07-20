@@ -1,0 +1,148 @@
+[
+  {
+    "id": "0577ec58-df0a-4f84-8a0e-087288553bf5",
+    "name": "estimated-resident-population-at-30-june-2018-by-territorial-authority-and-auckland-local-board",
+    "title": "Estimated Resident Population at 30 June 2018 by Territorial Authority and Auckland Local Boards",
+    "description": "Estimated resident population for census-base years, with age, sex and broad ethnic-group measures for territorial authorities and Auckland local board areas. Geography uses 2020 boundaries.",
+    "organization": "Stats NZ",
+    "tags": ["population", "demographics", "Auckland local boards"],
+    "groups": ["Population and society", "Land"],
+    "license_title": "Creative Commons Attribution 4.0 International",
+    "metadata_modified": "2026-07-03T00:24:19Z",
+    "url": "https://catalogue.data.govt.nz/dataset/0577ec58-df0a-4f84-8a0e-087288553bf5",
+    "resources": []
+  },
+  {
+    "id": "efb0b3bc-def4-4ca5-8d8b-9a40bbdc3e5b",
+    "name": "auckland-transport-api",
+    "title": "Auckland Transport API",
+    "description": "Catalogue record for Auckland Transport application programming interfaces and transport information services.",
+    "organization": "Auckland Council",
+    "tags": ["Auckland", "transport", "API"],
+    "groups": ["Transport"],
+    "license_title": "See source record",
+    "url": "https://catalogue.data.govt.nz/dataset/efb0b3bc-def4-4ca5-8d8b-9a40bbdc3e5b",
+    "resources": []
+  },
+  {
+    "id": "13b6400f-65bf-4ac1-b4f9-05296cbe8252",
+    "name": "cycling-auckland-transport",
+    "title": "Cycling - Auckland Transport",
+    "description": "Auckland Transport open-data catalogue for cycling-related geospatial datasets and services.",
+    "organization": "Auckland Council",
+    "tags": ["Auckland", "transport", "cycling", "bicycle"],
+    "groups": ["Transport"],
+    "license_title": "See source record",
+    "url": "https://catalogue.data.govt.nz/dataset/13b6400f-65bf-4ac1-b4f9-05296cbe8252",
+    "resources": []
+  },
+  {
+    "id": "a22116f5-4aed-479d-b4af-3a93d345a204",
+    "name": "ferry-auckland-transport",
+    "title": "Ferry - Auckland Transport",
+    "description": "Auckland Transport open-data catalogue for ferry-related datasets and geospatial services.",
+    "organization": "Auckland Council",
+    "tags": ["Auckland", "transport", "ferry", "public transport"],
+    "groups": ["Transport"],
+    "license_title": "See source record",
+    "url": "https://catalogue.data.govt.nz/dataset/a22116f5-4aed-479d-b4af-3a93d345a204",
+    "resources": []
+  },
+  {
+    "id": "a8aae00e-89f0-4688-9cb2-7fcb2eed69e8",
+    "name": "traffic-auckland-transport",
+    "title": "Traffic - Auckland Transport",
+    "description": "Auckland Transport open-data catalogue for traffic counts, traffic assets and related geospatial services.",
+    "organization": "Auckland Council",
+    "tags": ["Auckland", "transport", "traffic", "vehicles"],
+    "groups": ["Transport"],
+    "license_title": "See source record",
+    "url": "https://catalogue.data.govt.nz/dataset/a8aae00e-89f0-4688-9cb2-7fcb2eed69e8",
+    "resources": []
+  },
+  {
+    "id": "0a4f09c0-eb03-42e7-acc4-b7334371a2cd",
+    "name": "train-auckland-transport",
+    "title": "Train - Auckland Transport",
+    "description": "Auckland Transport open-data catalogue for rail stations, routes and related geospatial services.",
+    "organization": "Auckland Council",
+    "tags": ["Auckland", "transport", "train", "rail"],
+    "groups": ["Transport"],
+    "license_title": "See source record",
+    "url": "https://catalogue.data.govt.nz/dataset/0a4f09c0-eb03-42e7-acc4-b7334371a2cd",
+    "resources": []
+  },
+  {
+    "id": "68fa1cf2-fb90-40a4-8504-505c46457c6b",
+    "name": "bus-auckland-transport",
+    "title": "Bus - Auckland Transport",
+    "description": "Auckland Transport open-data catalogue for bus stops, routes and public-transport services.",
+    "organization": "Auckland Council",
+    "tags": ["Auckland", "transport", "bus", "public transport"],
+    "groups": ["Transport"],
+    "license_title": "See source record",
+    "url": "https://catalogue.data.govt.nz/dataset/68fa1cf2-fb90-40a4-8504-505c46457c6b",
+    "resources": []
+  },
+  {
+    "id": "07700fea-2d73-4cce-b72d-16c34fee6058",
+    "name": "roading-auckland-transport",
+    "title": "Roading - Auckland Transport",
+    "description": "Auckland Transport open-data catalogue for roads, road assets and related geospatial services.",
+    "organization": "Auckland Council",
+    "tags": ["Auckland", "transport", "road", "roading"],
+    "groups": ["Transport"],
+    "license_title": "See source record",
+    "url": "https://catalogue.data.govt.nz/dataset/07700fea-2d73-4cce-b72d-16c34fee6058",
+    "resources": []
+  },
+  {
+    "id": "15302767-df54-4c31-9b25-86b4568e0fcc",
+    "name": "auckland-transport-open-data",
+    "title": "Auckland Transport Open Data",
+    "description": "Entry point for Auckland Transport datasets published through the Auckland Council open-data portal.",
+    "organization": "Auckland Council",
+    "tags": ["Auckland", "transport", "open data"],
+    "groups": ["Transport"],
+    "license_title": "See source record",
+    "url": "https://catalogue.data.govt.nz/dataset/15302767-df54-4c31-9b25-86b4568e0fcc",
+    "resources": []
+  },
+  {
+    "id": "9fecb440-0608-4f14-b14e-4f2714c0efee",
+    "name": "driving-parking-auckland-transport",
+    "title": "Driving & Parking - Auckland Transport",
+    "description": "Auckland Transport open-data catalogue for driving, parking and related transport services.",
+    "organization": "Auckland Council",
+    "tags": ["Auckland", "transport", "driving", "parking"],
+    "groups": ["Transport"],
+    "license_title": "See source record",
+    "url": "https://catalogue.data.govt.nz/dataset/9fecb440-0608-4f14-b14e-4f2714c0efee",
+    "resources": []
+  },
+  {
+    "id": "97f770d5-7ff6-418e-8969-090d4462d820",
+    "name": "freight-network-auckland-transport",
+    "title": "Freight Network - Auckland Transport",
+    "description": "Auckland Transport open-data catalogue for freight routes and the regional freight network.",
+    "organization": "Auckland Council",
+    "tags": ["Auckland", "transport", "freight", "roads"],
+    "groups": ["Transport"],
+    "license_title": "See source record",
+    "url": "https://catalogue.data.govt.nz/dataset/97f770d5-7ff6-418e-8969-090d4462d820",
+    "resources": []
+  },
+  {
+    "id": "24e76ea8-2fff-4ecf-8087-cf591591957e",
+    "name": "mooring-auckland-transport",
+    "title": "Mooring - Auckland Transport",
+    "description": "Auckland open-data catalogue for mooring and maritime transport resources.",
+    "organization": "Auckland Council",
+    "tags": ["Auckland", "transport", "mooring", "maritime"],
+    "groups": ["Transport"],
+    "license_title": "See source record",
+    "url": "https://catalogue.data.govt.nz/dataset/24e76ea8-2fff-4ecf-8087-cf591591957e",
+    "resources": []
+  }
+]
+
